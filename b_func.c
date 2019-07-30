@@ -16,10 +16,6 @@ int b_func(va_list args)
 	int i = 0;
 
 	n = va_arg(args, int);
-<<<<<<< HEAD
-
-=======
->>>>>>> 13e0826a58fabc2c1befad26c65feb0f5fd3beda
 	while (n > 0)
 	{
 		binum[i] = n % 2;
@@ -28,9 +24,5 @@ int b_func(va_list args)
 	}
 	for (j = i - 1; j >= 0; j--)
 		_putchar(binum[j] + '0');
-<<<<<<< HEAD
-
-=======
->>>>>>> 13e0826a58fabc2c1befad26c65feb0f5fd3beda
 	return (i);
 }

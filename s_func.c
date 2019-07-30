@@ -6,11 +6,7 @@
  * s_func - function to print strings
  * @args: string passed into function
  *
-<<<<<<< HEAD
- * Return: number of characters in string
-=======
  * Return: counter
->>>>>>> 13e0826a58fabc2c1befad26c65feb0f5fd3beda
  */
 
 int s_func(va_list args)

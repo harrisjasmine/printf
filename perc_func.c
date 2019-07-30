@@ -10,10 +10,7 @@
 
 int perc_func(va_list args)
 {
-<<<<<<< HEAD
-=======
 	(void)args;
->>>>>>> 13e0826a58fabc2c1befad26c65feb0f5fd3beda
 	_putchar('%');
 	return (2);
 }
