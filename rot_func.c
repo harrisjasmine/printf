@@ -26,5 +26,5 @@ int rot_func(va_list args)
 	s = tmp;
 	for (j = 0; s[j]; j++)
 		_putchar(s[j]);
-	return (j);
+	return (j + 1);
 }
