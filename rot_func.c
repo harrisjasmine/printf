@@ -11,22 +11,30 @@
 
 int rot_func(va_list args)
 {
-	int i, j;
+	int i, l;
 	char str1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char str2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	char *s;
-	char *tmp;
 
 	s = va_arg(args, char *);
 	if (s == NULL)
+	{
 		s = "(null)";
-	tmp = s;
-	for (; *s != '\0'; s++)
-		for (i = 0; i < 52; i++)
-			if (*s == str1[i])
-				*s = str2[i], i = 52;
-	s = tmp;
-	for (j = 0; s[j]; j++)
-		_putchar(s[j]);
-	return (j);
+	}
+
+	for (i = 0; s[i] != '\0'; s++)
+	{
+		for (l = 0; str1[l]; l++)
+		{
+			if (s[i] == str1[l])
+			{
+				s[i] == str2[l];
+					_putchar(s[i]);
+					break;
+			}
+			if (!str1[l])
+				_putchar(s[i]);
+		}
+	}
+	return (i);
 }
