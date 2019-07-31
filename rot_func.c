@@ -18,6 +18,8 @@ int rot_func(va_list args)
 	char *tmp;
 
 	s = va_arg(args, char *);
+	if (s == NULL)
+		s = "(null)";
 	tmp = s;
 	for (; *s != '\0'; s++)
 		for (i = 0; i < 52; i++)
@@ -26,5 +28,5 @@ int rot_func(va_list args)
 	s = tmp;
 	for (j = 0; s[j]; j++)
 		_putchar(s[j]);
-	return (j + 1);
+	return (j);
 }
