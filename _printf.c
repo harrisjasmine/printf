@@ -14,19 +14,15 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i, j, k, count;
 	var_t type[] = {
-		{"c", c_func},
-		{"s", s_func},
-		{"i", i_func},
-		{"%", perc_func},
-		{"d", d_func},
-		{"b", b_func},
-		{"r", rev_func},
-		{"R", rot_func},
+		{"c", c_func}, {"s", s_func}, {"i", i_func}, {"%", perc_func},
+		{"d", d_func},	{"b", b_func},	{"r", rev_func}, {"R", rot_func},
 		{NULL, NULL},
 	};
 
 	va_start(args, format);
 	i = 0, count = 0, k = 0;
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (-1);
 	while (format && format[i])
 	{
 		if (format[i] != '%')
