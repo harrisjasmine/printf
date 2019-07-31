@@ -22,13 +22,13 @@ int rot_func(va_list args)
 		s = "(null)";
 	}
 
-	for (i = 0; s[i] != '\0'; s++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (l = 0; str1[l]; l++)
 		{
 			if (s[i] == str1[l])
 			{
-				s[i] == str2[l];
+				s[i] = str2[l];
 					_putchar(s[i]);
 					break;
 			}
