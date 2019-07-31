@@ -7,7 +7,7 @@ _printf \- function that prints data. The printf repository contains the files r
 `va_start`, `va_arg`, `va_end`
 
 #BRIEF SYNOPSIS
-
+The _printf function takes two arguments: a pointer to a string (FORMAT) and a list of arguments (va_list args). Parsing the FORMAT string, the function looks for format specifiers identified by `%` and then loops through an array of struct variables, searching for a matching specifier (character including 'c', 's', 'i', 'd' or 'b'). To the matching specifier corresponds a pointer to a specific function in the array/struct. Upon identifying a matching format specifier, the _printf function uses the corresponding proper function to print a character, a string, an integer, a decimal or a binary.
 
 #USAGE
 The following command compiles the files includes in the printf repository:
