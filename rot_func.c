@@ -6,7 +6,7 @@
  *
  * @args: string passed from main
  *
- * Return: counter
+ * Return: counter.
  */
 
 int rot_func(va_list args)
