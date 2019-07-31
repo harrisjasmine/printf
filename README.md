@@ -24,19 +24,19 @@ Tests can be run by compiling with a test file `main.c`, using the following com
 ```$ ./a.out```
 
 # FILE LIST
-_printf.c: main function file
-c_func.c: function that prints characters
-s_func.c: function that prints strings
-i_func.c: function that prints integers
-d_func.c: function that prints decimals
-b_func.c: binary conversion function
-perc_func.c: handling of percent symbols
-rev_func.c: Reverse string functionality
-rot_func.c: Rot13 functionality
-_putchar.c: replicate of the putchar function (from stdio)
-man_3_printf: man page
-holberton.h: header file
-.gitignore: working files for testing
+_printf.c: main function file.
+c_func.c: function that prints characters.
+s_func.c: function that prints strings.
+i_func.c: function that prints integers.
+d_func.c: function that prints decimals.
+b_func.c: binary conversion function.
+perc_func.c: handling of percent symbols.
+rev_func.c: Reverse string functionality.
+rot_func.c: Rot13 functionality.
+_putchar.c: replicate of the putchar function (from stdio).
+man_3_printf: man page.
+holberton.h: header file.
+.gitignore: working files for testing.
 
 # AUTHORS
-Jasmine Harris & Pierre Beaujuge
+Jasmine Harris & Pierre Beaujuge.
