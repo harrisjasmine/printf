@@ -12,5 +12,5 @@ int perc_func(va_list args)
 {
 	(void)args;
 	_putchar('%');
-	return (2);
+	return (1);
 }
